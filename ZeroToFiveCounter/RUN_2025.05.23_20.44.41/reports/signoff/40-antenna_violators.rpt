@@ -1,0 +1,4 @@
+Partial/Required:  1.73, Required:    400.0, Partial:   690.77, Net: net2, Pin: output2/A, Layer: met2
+Partial/Required:  1.40, Required:    400.0, Partial:   561.22, Net: one_second_counter\[8\], Pin: _216_/A, Layer: met1
+Partial/Required:  1.40, Required:    400.0, Partial:   559.56, Net: one_second_counter\[5\], Pin: _178_/C, Layer: met1
+Partial/Required:  1.04, Required:    400.0, Partial:   414.33, Net: _067_, Pin: _294_/B1_N, Layer: met1
