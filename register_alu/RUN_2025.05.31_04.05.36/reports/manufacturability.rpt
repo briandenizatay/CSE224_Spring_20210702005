@@ -1,0 +1,19 @@
+Design Name: register_alu
+Run Directory: /openlane/designs/register_alu/runs/RUN_2025.05.31_04.05.36
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/register_alu/runs/RUN_2025.05.31_04.05.36/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/register_alu/runs/RUN_2025.05.31_04.05.36/logs/signoff/42-register_alu.lef.lvs.log
+Number of nets: 5462                       |Number of nets: 5462                       
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/register_alu/runs/RUN_2025.05.31_04.05.36/logs/signoff/45-arc.log
+Pin violations: 5
+Net violations: 5

@@ -1,0 +1,282 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Typical Corner ===================================
+
+Startpoint: _8283_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _8283_ (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ _8283_/CLK (sky130_fd_sc_hd__dfxtp_2)
+     3    0.01    0.03    0.29    0.29 v _8283_/Q (sky130_fd_sc_hd__dfxtp_2)
+                                         rf.registers[28][7] (net)
+                  0.03    0.00    0.29 v _6557_/A1 (sky130_fd_sc_hd__mux2_2)
+     1    0.00    0.05    0.26    0.55 v _6557_/X (sky130_fd_sc_hd__mux2_2)
+                                         _3291_ (net)
+                  0.05    0.00    0.55 v _6558_/A (sky130_fd_sc_hd__buf_1)
+     1    0.00    0.03    0.10    0.65 v _6558_/X (sky130_fd_sc_hd__buf_1)
+                                         _0557_ (net)
+                  0.03    0.00    0.65 v _8283_/D (sky130_fd_sc_hd__dfxtp_2)
+                                  0.65   data arrival time
+
+                  0.00   10.00   10.00   clock core_clock (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                          0.00   10.00   clock reconvergence pessimism
+                                 10.00 ^ _8283_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                         -0.12    9.88   library setup time
+                                  9.88   data required time
+-----------------------------------------------------------------------------
+                                  9.88   data required time
+                                 -0.65   data arrival time
+-----------------------------------------------------------------------------
+                                  9.23   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Typical Corner ===================================
+
+max slew
+
+Pin                                    Limit    Slew   Slack
+------------------------------------------------------------
+_4983_/Y                                1.49    1.99   -0.50 (VIOLATED)
+_4893_/B1                               1.50    1.77   -0.27 (VIOLATED)
+_4946_/C                                1.50    1.77   -0.27 (VIOLATED)
+_5008_/C                                1.50    1.77   -0.27 (VIOLATED)
+_4910_/A3                               1.50    1.77   -0.27 (VIOLATED)
+_4899_/A3                               1.50    1.77   -0.27 (VIOLATED)
+_4887_/A                                1.50    1.77   -0.27 (VIOLATED)
+_7619_/X                                1.51    1.77   -0.26 (VIOLATED)
+_4900_/A                                1.50    1.72   -0.22 (VIOLATED)
+_4906_/A2                               1.50    1.72   -0.22 (VIOLATED)
+_4907_/A2                               1.50    1.72   -0.22 (VIOLATED)
+_4910_/A4                               1.50    1.72   -0.22 (VIOLATED)
+_4946_/D                                1.50    1.72   -0.22 (VIOLATED)
+_5008_/D                                1.50    1.72   -0.22 (VIOLATED)
+_7639_/X                                1.51    1.72   -0.21 (VIOLATED)
+_5027_/Y                                1.49    1.66   -0.17 (VIOLATED)
+_5199_/A1                               1.50    1.59   -0.09 (VIOLATED)
+_5189_/A                                1.50    1.59   -0.09 (VIOLATED)
+_5197_/A2                               1.50    1.59   -0.09 (VIOLATED)
+_5196_/A2                               1.50    1.59   -0.09 (VIOLATED)
+_4166_/X                                1.51    1.59   -0.08 (VIOLATED)
+_5149_/A2                               1.50    1.55   -0.05 (VIOLATED)
+_5152_/A1                               1.50    1.55   -0.05 (VIOLATED)
+_5143_/A                                1.50    1.55   -0.05 (VIOLATED)
+_5148_/A2                               1.50    1.55   -0.05 (VIOLATED)
+_5168_/A1                               1.50    1.55   -0.05 (VIOLATED)
+_5188_/A1                               1.50    1.55   -0.05 (VIOLATED)
+_4097_/X                                1.51    1.55   -0.04 (VIOLATED)
+_4981_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_4982_/A1                               1.50    1.54   -0.04 (VIOLATED)
+_4976_/A                                1.50    1.54   -0.04 (VIOLATED)
+_5010_/B                                1.50    1.54   -0.04 (VIOLATED)
+_4984_/B                                1.50    1.54   -0.04 (VIOLATED)
+_3850_/X                                1.51    1.54   -0.03 (VIOLATED)
+_5220_/A2                               1.50    1.50   -0.00 (VIOLATED)
+_5221_/A2                               1.50    1.50   -0.00 (VIOLATED)
+_5215_/A                                1.50    1.50   -0.00 (VIOLATED)
+_5216_/A                                1.50    1.50   -0.00 (VIOLATED)
+
+max capacitance
+
+Pin                                    Limit     Cap   Slack
+------------------------------------------------------------
+_4983_/Y                                0.08    0.11   -0.03 (VIOLATED)
+_7619_/X                                0.13    0.16   -0.03 (VIOLATED)
+_7639_/X                                0.13    0.15   -0.02 (VIOLATED)
+_5027_/Y                                0.08    0.09   -0.01 (VIOLATED)
+_4166_/X                                0.13    0.14   -0.01 (VIOLATED)
+_3850_/X                                0.13    0.13   -0.00 (VIOLATED)
+_4097_/X                                0.13    0.13   -0.00 (VIOLATED)
+_4810_/X                                0.13    0.13   -0.00 (VIOLATED)
+_5050_/Y                                0.08    0.08   -0.00 (VIOLATED)
+_4469_/X                                0.13    0.13   -0.00 (VIOLATED)
+
+
+max slew violations count Typical: 38
+max fanout violations count Typical: 0
+max cap violations count Typical: 10
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 1 unannotated drivers.
+ clk
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 38
+max fanout violation count 0
+max cap violation count 10
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 50 input ports missing set_input_delay.
+  a1[0]
+  a1[1]
+  a1[2]
+  a1[3]
+  a1[4]
+  a2[0]
+  a2[1]
+  a2[2]
+  a2[3]
+  a2[4]
+  a3[0]
+  a3[1]
+  a3[2]
+  a3[3]
+  a3[4]
+  opcode[0]
+  opcode[1]
+  wd3[0]
+  wd3[10]
+  wd3[11]
+  wd3[12]
+  wd3[13]
+  wd3[14]
+  wd3[15]
+  wd3[16]
+  wd3[17]
+  wd3[18]
+  wd3[19]
+  wd3[1]
+  wd3[20]
+  wd3[21]
+  wd3[22]
+  wd3[23]
+  wd3[24]
+  wd3[25]
+  wd3[26]
+  wd3[27]
+  wd3[28]
+  wd3[29]
+  wd3[2]
+  wd3[30]
+  wd3[31]
+  wd3[3]
+  wd3[4]
+  wd3[5]
+  wd3[6]
+  wd3[7]
+  wd3[8]
+  wd3[9]
+  we3
+Warning: There are 96 unconstrained endpoints.
+  alu_result[0]
+  alu_result[10]
+  alu_result[11]
+  alu_result[12]
+  alu_result[13]
+  alu_result[14]
+  alu_result[15]
+  alu_result[16]
+  alu_result[17]
+  alu_result[18]
+  alu_result[19]
+  alu_result[1]
+  alu_result[20]
+  alu_result[21]
+  alu_result[22]
+  alu_result[23]
+  alu_result[24]
+  alu_result[25]
+  alu_result[26]
+  alu_result[27]
+  alu_result[28]
+  alu_result[29]
+  alu_result[2]
+  alu_result[30]
+  alu_result[31]
+  alu_result[3]
+  alu_result[4]
+  alu_result[5]
+  alu_result[6]
+  alu_result[7]
+  alu_result[8]
+  alu_result[9]
+  rd1[0]
+  rd1[10]
+  rd1[11]
+  rd1[12]
+  rd1[13]
+  rd1[14]
+  rd1[15]
+  rd1[16]
+  rd1[17]
+  rd1[18]
+  rd1[19]
+  rd1[1]
+  rd1[20]
+  rd1[21]
+  rd1[22]
+  rd1[23]
+  rd1[24]
+  rd1[25]
+  rd1[26]
+  rd1[27]
+  rd1[28]
+  rd1[29]
+  rd1[2]
+  rd1[30]
+  rd1[31]
+  rd1[3]
+  rd1[4]
+  rd1[5]
+  rd1[6]
+  rd1[7]
+  rd1[8]
+  rd1[9]
+  rd2[0]
+  rd2[10]
+  rd2[11]
+  rd2[12]
+  rd2[13]
+  rd2[14]
+  rd2[15]
+  rd2[16]
+  rd2[17]
+  rd2[18]
+  rd2[19]
+  rd2[1]
+  rd2[20]
+  rd2[21]
+  rd2[22]
+  rd2[23]
+  rd2[24]
+  rd2[25]
+  rd2[26]
+  rd2[27]
+  rd2[28]
+  rd2[29]
+  rd2[2]
+  rd2[30]
+  rd2[31]
+  rd2[3]
+  rd2[4]
+  rd2[5]
+  rd2[6]
+  rd2[7]
+  rd2[8]
+  rd2[9]

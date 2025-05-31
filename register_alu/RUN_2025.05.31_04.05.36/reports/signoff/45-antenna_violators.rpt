@@ -1,0 +1,5 @@
+Partial/Required:  1.50, Required:  2773.88, Partial:  4171.54, Net: net131, Pin: output131/A, Layer: met2
+Partial/Required:  1.27, Required:  2773.88, Partial:  3518.31, Net: net93, Pin: output93/A, Layer: met1
+Partial/Required:  1.12, Required:    400.0, Partial:   446.23, Net: net23, Pin: _6087_/A, Layer: met1
+Partial/Required:  1.08, Required:    400.0, Partial:    431.0, Net: _3149_, Pin: _6297_/S, Layer: met1
+Partial/Required:  1.06, Required:    400.0, Partial:   423.78, Net: _1669_, Pin: _4462_/A, Layer: met1
