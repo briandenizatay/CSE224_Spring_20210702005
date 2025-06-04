@@ -1,0 +1,26 @@
+
+59. Printing statistics.
+
+=== TopCPU ===
+
+   Number of wires:               2543
+   Number of wire bits:           3215
+   Number of public wires:          27
+   Number of public wire bits:     691
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               3196
+     $_ANDNOT_                     296
+     $_AND_                         17
+     $_MUX_                       1635
+     $_NAND_                        64
+     $_NOR_                         20
+     $_NOT_                        121
+     $_ORNOT_                       26
+     $_OR_                         273
+     $_XNOR_                        21
+     $_XOR_                         78
+     sky130_fd_sc_hd__dfrtp_2        5
+     sky130_fd_sc_hd__dfxtp_2      640
+
