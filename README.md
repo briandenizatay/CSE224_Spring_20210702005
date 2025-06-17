@@ -1,11 +1,7 @@
-# Two's Complement OpenLane Project
- 
- This project implements an 8-bit two's complement module using the OpenLane ASIC design flow.
- 
- ## Files
- - `twos_complement.v`: Verilog source
- - `config.json`: OpenLane config
- - `pin_order.cfg`: Pin placement file
- 
- ## Flow
- Tested with OpenLane v1.1.1 and Sky130A PDK.
+ABOUT
+- This repository is created to upload and maintain files regarding CSE224 course.
+- This repository has 3 collaborators:
+  ID                   USERNAME                        REALNAME
+  20210702005          briandenizatay(Captain)         Brian Deniz ATAY
+  20220702103          FFGFurkan                       Furkan Ahmet YAĞCI
+  20220702067          edacetinel                      Eda Gül ÇETİNEL
