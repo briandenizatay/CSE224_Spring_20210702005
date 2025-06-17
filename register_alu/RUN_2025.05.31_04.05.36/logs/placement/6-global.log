@@ -1,0 +1,130 @@
+OpenROAD b16bda7e82721d10566ff7e2b68f1ff0be9f9e38 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+define_corners Typical
+read_liberty -corner Typical /home/briandeniz/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+[INFO]: Reading ODB at '/openlane/designs/register_alu/runs/RUN_2025.05.31_04.05.36/results/floorplan/register_alu.odb'…
+Reading design constraints file at '/openlane/designs/register_alu/src/register_alu.sdc'…
+[INFO]: Setting RC values...
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met3. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: (  5.520 10.880 ) ( 1494.080 1787.040 ) um
+[INFO GPL-0006] NumInstances:             43903
+[INFO GPL-0007] NumPlaceInstances:         4935
+[INFO GPL-0008] NumFixedInstances:        38968
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                   4986
+[INFO GPL-0011] NumPins:                  17432
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 1500.000 1800.000 ) um
+[INFO GPL-0013] CoreBBox: (  5.520 10.880 ) ( 1494.080 1787.040 ) um
+[INFO GPL-0016] CoreArea:            2643920.730 um^2
+[INFO GPL-0017] NonPlaceInstsArea:    52024.896 um^2
+[INFO GPL-0018] PlaceInstsArea:       59273.098 um^2
+[INFO GPL-0019] Util:                     2.287 %
+[INFO GPL-0020] StdInstsArea:         59273.098 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00000011 HPWL: 301108240
+[InitialPlace]  Iter: 2 CG residual: 0.00000009 HPWL: 229174427
+[InitialPlace]  Iter: 3 CG residual: 0.00000609 HPWL: 229650838
+[InitialPlace]  Iter: 4 CG residual: 0.00000010 HPWL: 229671507
+[InitialPlace]  Iter: 5 CG residual: 0.00000012 HPWL: 229438501
+[INFO GPL-0031] FillerInit:NumGCells:     43577
+[INFO GPL-0032] FillerInit:NumGNets:       4986
+[INFO GPL-0033] FillerInit:NumGPins:      17432
+[INFO GPL-0023] TargetDensity:            0.200
+[INFO GPL-0024] AvrgPlaceInstArea:       12.011 um^2
+[INFO GPL-0025] IdealBinArea:            60.054 um^2
+[INFO GPL-0026] IdealBinCnt:              44025
+[INFO GPL-0027] TotalBinArea:        2643920.730 um^2
+[INFO GPL-0028] BinCnt:       128    128
+[INFO GPL-0029] BinSize: ( 11.630 13.877 )
+[INFO GPL-0030] NumBins: 16384
+[NesterovSolve] Iter:    1 overflow: 0.951 HPWL: 242551649
+[NesterovSolve] Iter:   10 overflow: 0.856 HPWL: 312924937
+[NesterovSolve] Iter:   20 overflow: 0.833 HPWL: 313339160
+[NesterovSolve] Iter:   30 overflow: 0.824 HPWL: 312991442
+[NesterovSolve] Iter:   40 overflow: 0.819 HPWL: 311796628
+[NesterovSolve] Iter:   50 overflow: 0.817 HPWL: 311435611
+[NesterovSolve] Iter:   60 overflow: 0.819 HPWL: 311102427
+[NesterovSolve] Iter:   70 overflow: 0.820 HPWL: 309919158
+[NesterovSolve] Iter:   80 overflow: 0.824 HPWL: 309183599
+[NesterovSolve] Iter:   90 overflow: 0.824 HPWL: 308937572
+[NesterovSolve] Iter:  100 overflow: 0.824 HPWL: 308593595
+[NesterovSolve] Iter:  110 overflow: 0.823 HPWL: 308676292
+[NesterovSolve] Iter:  120 overflow: 0.822 HPWL: 308789951
+[NesterovSolve] Iter:  130 overflow: 0.822 HPWL: 309267489
+[NesterovSolve] Iter:  140 overflow: 0.820 HPWL: 309334040
+[NesterovSolve] Iter:  150 overflow: 0.818 HPWL: 310298208
+[NesterovSolve] Iter:  160 overflow: 0.817 HPWL: 311417011
+[NesterovSolve] Iter:  170 overflow: 0.812 HPWL: 312978257
+[NesterovSolve] Iter:  180 overflow: 0.805 HPWL: 315284111
+[NesterovSolve] Iter:  190 overflow: 0.798 HPWL: 317630788
+[NesterovSolve] Iter:  200 overflow: 0.788 HPWL: 319503243
+[INFO GPL-0100] worst slack 9.18e-09
+[INFO GPL-0103] Weighted 498 nets.
+[NesterovSolve] Iter:  210 overflow: 0.777 HPWL: 320321977
+[NesterovSolve] Iter:  220 overflow: 0.751 HPWL: 325271025
+[NesterovSolve] Iter:  230 overflow: 0.728 HPWL: 328481270
+[NesterovSolve] Iter:  240 overflow: 0.696 HPWL: 332711138
+[NesterovSolve] Iter:  250 overflow: 0.665 HPWL: 337057749
+[INFO GPL-0100] worst slack 9.05e-09
+[INFO GPL-0103] Weighted 498 nets.
+[NesterovSolve] Iter:  260 overflow: 0.626 HPWL: 341802328
+[NesterovSolve] Snapshot saved at iter = 265
+[NesterovSolve] Iter:  270 overflow: 0.585 HPWL: 345392064
+[NesterovSolve] Iter:  280 overflow: 0.541 HPWL: 347664520
+[NesterovSolve] Iter:  290 overflow: 0.495 HPWL: 349164465
+[INFO GPL-0100] worst slack 9.09e-09
+[INFO GPL-0103] Weighted 498 nets.
+[NesterovSolve] Iter:  300 overflow: 0.450 HPWL: 351511844
+[NesterovSolve] Iter:  310 overflow: 0.413 HPWL: 352568806
+[NesterovSolve] Iter:  320 overflow: 0.369 HPWL: 353139067
+[NesterovSolve] Iter:  330 overflow: 0.333 HPWL: 353933733
+[NesterovSolve] Iter:  340 overflow: 0.307 HPWL: 356011988
+[INFO GPL-0100] worst slack 9.16e-09
+[INFO GPL-0103] Weighted 498 nets.
+[NesterovSolve] Iter:  350 overflow: 0.277 HPWL: 357907595
+[NesterovSolve] Iter:  360 overflow: 0.247 HPWL: 358108194
+[NesterovSolve] Iter:  370 overflow: 0.216 HPWL: 359347100
+[INFO GPL-0100] worst slack 9.19e-09
+[INFO GPL-0103] Weighted 498 nets.
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GPL-0036] TileBBox: (    0    0 ) ( 6900 6900 ) DBU
+[INFO GPL-0038] TileCnt:     217  260
+[INFO GPL-0039] numRoutingLayers: 6
+[INFO GPL-0040] NumTiles: 56420
+[INFO GPL-0063] TotalRouteOverflowH2: 0.10000002384185791
+[INFO GPL-0064] TotalRouteOverflowV2: 0.20000016689300537
+[INFO GPL-0065] OverflowTileCnt2: 4
+[INFO GPL-0066] 0.5%RC: 0.9158
+[INFO GPL-0067] 1.0%RC: 0.8560
+[INFO GPL-0068] 2.0%RC: 0.7930
+[INFO GPL-0069] 5.0%RC: 0.7172
+[INFO GPL-0070] 0.5rcK: 1
+[INFO GPL-0071] 1.0rcK: 1
+[INFO GPL-0072] 2.0rcK: 0
+[INFO GPL-0073] 5.0rcK: 0
+[INFO GPL-0074] FinalRC: 0.8859
+[INFO GPL-0077] FinalRC lower than targetRC(1), routability not needed.
+[NesterovSolve] Iter:  380 overflow: 0.189 HPWL: 359099553
+[NesterovSolve] Iter:  390 overflow: 0.162 HPWL: 359439447
+[INFO GPL-0100] worst slack 9.2e-09
+[INFO GPL-0103] Weighted 498 nets.
+[NesterovSolve] Iter:  400 overflow: 0.135 HPWL: 360106534
+[NesterovSolve] Iter:  410 overflow: 0.111 HPWL: 360909315
+[NesterovSolve] Finished with Overflow: 0.099696
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/register_alu/runs/RUN_2025.05.31_04.05.36/tmp/placement/7-global.odb'…
+Writing netlist to '/openlane/designs/register_alu/runs/RUN_2025.05.31_04.05.36/tmp/placement/7-global.nl.v'…
+Writing powered netlist to '/openlane/designs/register_alu/runs/RUN_2025.05.31_04.05.36/tmp/placement/7-global.pnl.v'…
+Writing layout to '/openlane/designs/register_alu/runs/RUN_2025.05.31_04.05.36/tmp/placement/7-global.def'…

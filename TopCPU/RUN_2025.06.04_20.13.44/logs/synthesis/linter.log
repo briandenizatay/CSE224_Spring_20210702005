@@ -1,0 +1,8 @@
+%Warning-VARHIDDEN: /openlane/designs/TopCPU/src/RegisterFile.v:11:16: Declaration of signal hides declaration in upper scope: 'regfile'
+   11 |     reg [31:0] regfile [0:31];
+      |                ^~~~~~~
+                    /openlane/designs/TopCPU/src/TopCPU.v:21:18: ... Location of original declaration
+   21 |     RegisterFile regfile(clk, we, rs1, rs2, rd, Result, A, B);
+      |                  ^~~~~~~
+                    ... For warning description see https://verilator.org/warn/VARHIDDEN?v=5.018
+                    ... Use "/* verilator lint_off VARHIDDEN */" and lint_on around source to disable this message.

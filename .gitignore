@@ -1,8 +1,0 @@
-runs/
-*.log
-*.lef
-*.vcd
-__pycache__/
-*.pyc
-.DS_Store
-
