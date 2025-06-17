@@ -1,7 +1,6 @@
 runs/
 *.log
 *.lef
-*.gds
 *.vcd
 __pycache__/
 *.pyc
